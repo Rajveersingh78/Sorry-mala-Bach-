@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorry Madam Ji ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="hearts" id="hearts"></div>
+  <div class="sparkles" id="sparkles"></div>
+
+  <main class="page">
+    <section class="hero card">
+      <div class="big-heart">❤️</div>
+      <p class="small-title">A little website made with a lot of feelings</p>
+      <h1>I'm Sorry, Madam Ji 🥺</h1>
+      <p class="subtitle">Meri Pyaari Rani Ji • Meri Madam Ji • Meri Khaas Ji 🌸</p>
+
+      <div class="type-box">
+        <span id="typing"></span><span class="cursor">|</span>
+      </div>
+
+      <button class="main-btn" onclick="openMessage()">💗 Maaf Kar Do</button>
+      <button class="ghost-btn" onclick="scrollToLetter()">📜 Mera Message Padho</button>
+    </section>
+
+    <section class="card letter" id="letter">
+      <span class="badge">💌 Dil Se</span>
+      <h2>Meri Pyaari Madam Ji,</h2>
+
+      <p>
+        Mujhse jo bhi galti hui, uske liye dil se sorry. 🥺
+        Mera intention kabhi bhi aapko hurt karna nahi tha.
+        Kabhi-kabhi insaan se galti ho jaati hai, lekin aap mere liye
+        bahut important ho, isliye aapki narazgi mujhe bilkul achhi nahi lagti.
+      </p>
+
+      <p>
+        Main maanta hoon ki sirf “sorry” bol dene se sab kuch instantly
+        theek nahi hota, lekin meri maafi sachchi hai. 🙏🏻
+        Main chahta hoon ki aap thoda sa gussa chhod do aur ek baar
+        phir se smile kar do. Aapki smile bahut special hai. ❤️
+      </p>
+
+      <p>
+        Isliye aaj officially, dil se aur poori respect ke saath:
+        <strong>Sorry meri Rani Ji. Sorry meri Madam Ji. Sorry meri Pyaari Ji.</strong>
+        🌸
+      </p>
+
+      <div class="promise">
+        <h3>🌷 Ek Chhoti Si Baat</h3>
+        <p>
+          Galti repeat na karne ki poori koshish karunga,
+          baat ko samajhne ki koshish karunga aur aapki feelings ki respect
+          karunga. Bas ab thoda sa muskura do. 🥹❤️
+        </p>
+      </div>
+    </section>
+
+    <section class="card names">
+      <span class="badge">🌹 Respectfully</span>
+      <h2>Sorry, meri...</h2>
+      <div class="name-grid">
+        <div>Sorry meri Rani Ji 👑</div>
+        <div>Sorry meri Madam Ji 🌸</div>
+        <div>Sorry meri Maharani Ji 👑</div>
+        <div>Sorry meri Pyaari Ji 💗</div>
+        <div>Sorry meri Devi Ji 🙏🏻</div>
+        <div>Sorry meri Rani Sahiba 🌹</div>
+        <div>Sorry meri Shrimati Ji 💍</div>
+        <div>Sorry meri Begum Ji 🌷</div>
+        <div>Sorry meri Rajkumari Ji ✨</div>
+        <div>Sorry meri Pyaari Madam Ji 🥺</div>
+        <div>Sorry meri Khaas Ji ❤️</div>
+        <div>Sorry meri Humsafar Ji 🫶🏻</div>
+      </div>
+    </section>
+
+    <section class="card reasons">
+      <span class="badge">💖 From My Heart</span>
+      <h2>Aapko Manane Ki 5 Koshish</h2>
+      <div class="reason">
+        <span>01</span><p>Gussa ho toh bhi meri baat ek baar sun lena. 🥺</p>
+      </div>
+      <div class="reason">
+        <span>02</span><p>Jo galti hui usse samajhne ki koshish karunga. 🙏🏻</p>
+      </div>
+      <div class="reason">
+        <span>03</span><p>Aapki feelings ko lightly nahi lunga. 🌸</p>
+      </div>
+      <div class="reason">
+        <span>04</span><p>Apology sirf words nahi, actions se bhi dikhane ki koshish rahegi. ❤️</p>
+      </div>
+      <div class="reason">
+        <span>05</span><p>Bas ek baar smile kar do, Madam Ji. 🥹💗</p>
+      </div>
+    </section>
+
+    <section class="card interactive">
+      <span class="badge">🥺 One Last Request</span>
+      <h2>Kya Ab Maaf Karogi?</h2>
+      <p>Button dabao aur dekho meri final request. 👇</p>
+
+      <button class="main-btn" onclick="forgive()">Haan, Maaf Kiya ❤️</button>
+      <button class="no-btn" id="noBtn" onclick="moveNoButton()">Abhi Sochungi 🙈</button>
+
+      <div id="forgiveMessage" class="hidden-result">
+        YAY! 🥹❤️<br>
+        Thank you meri Pyaari Madam Ji! 🌸<br>
+        Ab ek pyari si smile banti hai. 😊💗
+      </div>
+    </section>
+
+    <footer>
+      Made with ❤️ & a little bit of regret 🥺<br>
+      <span>For my special Madam Ji 🌸</span>
+    </footer>
+  </main>
+
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <button class="close" onclick="closeMessage()">×</button>
+      <div class="modal-heart">💗</div>
+      <h2>Bas Itna Kehna Tha...</h2>
+      <p>
+        Sorry meri Pyaari Madam Ji. 🥺<br><br>
+        Please dil pe mat lena. Aap important ho, isliye
+        aapko manane ke liye ye chhoti si website banayi hai. 🌸
+        Ab gussa thoda sa kam kar do na. 🙏🏻❤️
+      </p>
+      <button class="main-btn" onclick="closeMessage()">Theek Hai ❤️</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
